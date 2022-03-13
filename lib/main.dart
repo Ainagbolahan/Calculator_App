@@ -103,12 +103,20 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
         Container(
           alignment: Alignment.centerRight,
           padding: EdgeInsets.fromLTRB(10, 30, 10, 0),
-          child: Text(equation, style: TextStyle(fontSize: 36.0)),
+          child: Text(
+            equation,
+            maxLines: 2,
+            style: TextStyle(fontSize: 25.0),
+          ),
         ),
         Container(
           alignment: Alignment.centerRight,
           padding: EdgeInsets.fromLTRB(10, 30, 10, 0),
-          child: Text(result, style: TextStyle(fontSize: 40.0)),
+          child: Text(
+            result,
+            style: TextStyle(fontSize: 30.0),
+            maxLines: 2,
+          ),
         ),
         Expanded(
           child: Divider(),
